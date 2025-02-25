@@ -7,10 +7,12 @@ runs:
   main: "dist/index.js"
 
 inputs:
-  name:
-    description: "Your name"
+  gh-token:
+    description: "The GitHub token for authentication."
     required: true
-    default: "World"
+  label:
+    description: "The label to be applied to the pull request."
+    required: true
 
 branding:
   icon: "activity"
